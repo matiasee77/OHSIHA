@@ -23,5 +23,6 @@ urlpatterns = [
     path('accounts/', include('accounts.urls')),
     path('', TemplateView.as_view(template_name='home.html'), name='home'),
     path('app/', include('app.urls')),
+    path('api/', include('api.urls')),
 
 ]
